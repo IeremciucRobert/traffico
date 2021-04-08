@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../Fonts/Rubik-Regular.ttf");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../Fonts/DMSerifDisplay-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fef8f5;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.width_container {
+  width: 1120px;
+  margin: auto;
+}
+
+.button_arrow_right {
+  padding: 20px 93px 20px 25px;
+  background-image: url("../Images/left_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 27px center;
+  background-size: auto 12px;
+  background-color: #ee4d47;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
