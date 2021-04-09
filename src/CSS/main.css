@@ -1,0 +1,220 @@
+.about_container {
+  display: flex;
+  gap: 26px;
+  margin-top: 120px;
+}
+
+.text_outlined_container {
+  padding: 30px 35px 30px 55px;
+  background: rgba(252, 221, 212, 0.4);
+  border-left: 10px solid #ed4d47;
+  border-radius: 8px;
+}
+
+.text_outlined {
+  margin: 0;
+  font-family: "Rubik_medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #402b2b;
+}
+
+.about_left {
+  width: 570px;
+  margin-top: 80px;
+}
+
+.about_text {
+  margin: 40px 130px 70px 0;
+}
+
+.about_right {
+  flex: 1;
+}
+
+.about_right img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.apply_container {
+  display: flex;
+  margin-top: 261px;
+  margin-bottom: 280px;
+  gap: 26px;
+}
+
+.apply_left {
+  flex: 1;
+  margin-right: 150px;
+}
+
+.apply_left img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.apply_text {
+  width: 455px;
+  margin-top: 40px;
+}
+
+.FAQ_section {
+  position: relative;
+}
+
+.FAQ_background {
+  position: absolute;
+  height: 100%;
+  width: 74%;
+  right: 0;
+  background-color: #fdede8;
+  border-top-left-radius: 150px;
+}
+
+.FAQ_container {
+  position: relative;
+  padding: 108px 0;
+}
+
+.FAQ_top {
+  display: flex;
+  gap: 26px;
+  margin-bottom: 90px;
+}
+
+.FAQ_top div {
+  width: 50%;
+}
+
+.FAQ_top div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 9%;
+}
+
+.FAQ_top div:nth-child(2) img {
+  position: relative;
+  left: -17%;
+}
+
+.FAQ_secondTitle {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 140%;
+  color: #402b2b;
+}
+
+.FAQ_buttons_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.FAQ_buttons_container li {
+  height: fit-content;
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  background: #fff7f5;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-radius: 10px;
+}
+
+.FAQ_button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  padding: 0 35px;
+  text-align: left;
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-radius: 10px;
+  font-family: "Rubik_medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #402b2b;
+  cursor: pointer;
+}
+
+.FAQ_button_text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.FAQ_button_sign {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.FAQ_button_sign:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ee4d47;
+}
+
+.FAQ_button_sign_plus:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ee4d47;
+}
+
+.FAQ_text {
+  display: none;
+  margin: 0;
+  padding: 40px 35px 60px 35px;
+  font-family: "Rubik_light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #402b2b;
+}
+
+.FAQ_text_show {
+  display: inline-block;
+}
+
+.FAQ_loadLI {
+  width: 100%;
+  margin-left: calc(50% + 10px);
+}
+
+.FAQ_loadMore {
+  font-family: "Rubik_bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #ed4d47;
+  text-transform: uppercase;
+  background-color: rgba(237, 77, 71, 0.2);
+}
+
+.FAQ_loadMore span:first-child {
+  padding: 0;
+  text-align: center;
+}

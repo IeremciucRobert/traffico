@@ -1,6 +1,18 @@
 @font-face {
+  font-family: "Rubik_light";
+  src: url("../Fonts/Rubik-Light.ttf");
+}
+@font-face {
   font-family: "Rubik";
   src: url("../Fonts/Rubik-Regular.ttf");
+}
+@font-face {
+  font-family: "Rubik_medium";
+  src: url("../Fonts/Rubik-Medium.ttf");
+}
+@font-face {
+  font-family: "Rubik_bold";
+  src: url("../Fonts/Rubik-Bold.ttf");
 }
 @font-face {
   font-family: "DM Serif Display";
@@ -40,4 +52,24 @@ button:focus {
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.main_title {
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ee4d47;
+  text-transform: uppercase;
+}
+
+.main_text {
+  margin: 0;
+  font-family: "Rubik_light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  color: #402b2b;
 }
