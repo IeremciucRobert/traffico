@@ -229,6 +229,7 @@ footer {
   width: 36px;
   height: 36px;
   margin-left: 31px;
+  cursor: pointer;
 }
 
 .footer_socials a img {

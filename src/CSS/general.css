@@ -19,10 +19,15 @@
   src: url("../Fonts/DMSerifDisplay-Regular.ttf");
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #fef8f5;
+  overflow-x: hidden;
 }
 
 button {

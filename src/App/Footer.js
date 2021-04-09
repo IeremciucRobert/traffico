@@ -19,7 +19,7 @@ export default function Footer() {
             We provide traffic management consultants so you get started
             quickly, contact us for a quote today!
           </div>
-          <form className="footer_form">
+          <form className="footer_form" onSubmit={(ev) => ev.preventDefault()}>
             <span>Name</span>
             <input placeholder="Your name" />
             <span>Email address</span>
@@ -32,13 +32,13 @@ export default function Footer() {
             <img className="top_logo" src={logo} />
             <ul className="footer_buttons_container top_buttons_container">
               <li>
-                <a href="#">About</a>
+                <a>About</a>
               </li>
               <li>
-                <a href="#">How to</a>
+                <a>How to</a>
               </li>
               <li>
-                <a href="#">Faqs</a>
+                <a>Faqs</a>
               </li>
             </ul>
           </nav>
@@ -48,13 +48,13 @@ export default function Footer() {
         <div className="footer_socials_wrapper width_container">
           <span>Copyright @ 2019</span>
           <span className="footer_socials">
-            <a href="#">
+            <a>
               <img src={facebook} />
             </a>
-            <a href="#">
+            <a>
               <img src={twitter} />
             </a>
-            <a href="#">
+            <a>
               <img src={instagram} />
             </a>
           </span>
