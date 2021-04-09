@@ -212,6 +212,7 @@
   color: #ed4d47;
   text-transform: uppercase;
   background-color: rgba(237, 77, 71, 0.2);
+  box-shadow: none;
 }
 
 .FAQ_loadMore span:first-child {
