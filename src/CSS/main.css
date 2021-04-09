@@ -1,7 +1,24 @@
+main {
+  overflow: hidden;
+}
+
 .about_container {
   display: flex;
   gap: 26px;
   margin-top: 120px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .about_container {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about_container {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
 }
 
 .text_outlined_container {
@@ -26,6 +43,23 @@
   margin-top: 80px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about_left {
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .about_left h1 {
+    text-align: center;
+  }
+  .about_left > p {
+    margin: 40px 0px 50px 0;
+    text-align: center;
+  }
+}
+
 .about_text {
   margin: 40px 130px 70px 0;
 }
@@ -35,9 +69,16 @@
 }
 
 .about_right img {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about_right img {
+    max-width: 477px;
+    margin: auto;
+  }
 }
 
 .apply_container {
@@ -47,15 +88,57 @@
   gap: 26px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .apply_container {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+}
+
 .apply_left {
   flex: 1;
   margin-right: 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .apply_left {
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .apply_left h1 {
+    text-align: center;
+  }
+  .apply_left > p {
+    margin: 40px 0px 50px 0;
+    text-align: center;
+  }
 }
 
 .apply_left img {
   width: 100%;
   height: auto;
   display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .apply_right {
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .apply_right h1 {
+    text-align: center;
+  }
+  .apply_right > p {
+    width: 100%;
+    margin: 40px 0px 50px 0;
+    text-align: center;
+  }
 }
 
 .apply_text {
@@ -76,15 +159,38 @@
   border-top-left-radius: 150px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .FAQ_background {
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+  }
+}
+
 .FAQ_container {
   position: relative;
-  padding: 108px 0;
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .FAQ_container {
+    padding-top: 35px;
+  }
 }
 
 .FAQ_top {
   display: flex;
   gap: 26px;
   margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_top {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .FAQ_top div {
@@ -98,9 +204,44 @@
   margin-top: 9%;
 }
 
+@media only screen and (max-width: 769px) {
+  .FAQ_top div:first-child {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .FAQ_top div:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_top div:nth-child(2) {
+    width: 100%;
+  }
+}
+
 .FAQ_top div:nth-child(2) img {
   position: relative;
   left: -17%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .FAQ_top div:nth-child(2) img {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_top div:nth-child(2) img {
+    max-width: 470px;
+    margin: auto;
+  }
 }
 
 .FAQ_secondTitle {
@@ -112,6 +253,18 @@
   color: #402b2b;
 }
 
+@media only screen and (max-width: 1280px) {
+  .FAQ_secondTitle {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_secondTitle {
+    margin: 10px 0;
+  }
+}
+
 .FAQ_buttons_container {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +274,12 @@
   list-style-type: none;
 }
 
+@media only screen and (max-width: 769px) {
+  .FAQ_buttons_container {
+    flex-direction: column;
+  }
+}
+
 .FAQ_buttons_container li {
   height: fit-content;
   width: calc(50% - 10px);
@@ -128,6 +287,12 @@
   background: #fff7f5;
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_buttons_container li {
+    width: 100%;
+  }
 }
 
 .FAQ_button {
@@ -148,6 +313,20 @@
   font-size: 18px;
   color: #402b2b;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .FAQ_button {
+    min-height: 90px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_button {
+  }
 }
 
 .FAQ_button_text {
@@ -200,6 +379,12 @@
 .FAQ_loadLI {
   width: 100%;
   margin-left: calc(50% + 10px);
+}
+
+@media only screen and (max-width: 769px) {
+  .FAQ_loadLI {
+    margin-left: 0;
+  }
 }
 
 .FAQ_loadMore {

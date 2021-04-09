@@ -26,7 +26,9 @@ export default function Top() {
             </ul>
           </nav>
           <h3 className="top_title">Your awesome traffic permit consultant.</h3>
-          <button className="button_arrow_right">Get Started</button>
+          <button className="top_button_start button_arrow_right">
+            Get Started
+          </button>
         </div>
       </header>
       <div className="mobel_container">

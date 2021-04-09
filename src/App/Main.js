@@ -114,7 +114,7 @@ function Apply() {
       <div className="apply_left">
         <img src={applyImage} />
       </div>
-      <div className="">
+      <div className="apply_right">
         <h1 className="main_title">How to apply</h1>
         <p className="apply_text main_text">
           When applying for a traffic permit, there are certain requirements
