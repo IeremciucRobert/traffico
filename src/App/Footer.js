@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer_treckmobil">
-        <img src={treckmobil} />
+        <img src={treckmobil} alt="treckmobil" />
       </div>
       <div className="footer_background"></div>
       <div className="footer_container width_container">
@@ -29,16 +29,16 @@ export default function Footer() {
         </div>
         <div className="footer_nav_container">
           <nav className="top_nav">
-            <img className="top_logo" src={logo} />
+            <img className="top_logo" src={logo} alt="logo" />
             <ul className="footer_buttons_container top_buttons_container">
               <li>
-                <a>About</a>
+                <a href="www.test.com">About</a>
               </li>
               <li>
-                <a>How to</a>
+                <a href="www.test.com">How to</a>
               </li>
               <li>
-                <a>Faqs</a>
+                <a href="www.test.com">Faqs</a>
               </li>
             </ul>
           </nav>
@@ -48,14 +48,14 @@ export default function Footer() {
         <div className="footer_socials_wrapper width_container">
           <span>Copyright @ 2019</span>
           <span className="footer_socials">
-            <a>
-              <img src={facebook} />
+            <a href="www.test.com">
+              <img src={facebook} alt="facebook" />
             </a>
-            <a>
-              <img src={twitter} />
+            <a href="www.test.com">
+              <img src={twitter} alt="twitter" />
             </a>
-            <a>
-              <img src={instagram} />
+            <a href="www.test.com">
+              <img src={instagram} alt="instagram" />
             </a>
           </span>
         </div>

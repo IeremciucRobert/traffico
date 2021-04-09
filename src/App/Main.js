@@ -36,13 +36,14 @@ export default function Main() {
               </h2>
             </div>
             <div>
-              <img src={FAQ} />
+              <img src={FAQ} alt="FAQ" />
             </div>
           </div>
           <div className="FAQ_body">
             <ul className="FAQ_buttons_container">
               {texts.map((text, index) => {
-                if (index > loaded) return;
+                if (index > loaded) return null;
+
                 const checkSelected = text.id === selected;
 
                 return (
@@ -102,7 +103,7 @@ function About() {
         </div>
       </div>
       <div className="about_right">
-        <img src={aboutImage} />
+        <img src={aboutImage} alt="about" />
       </div>
     </section>
   );
@@ -112,7 +113,7 @@ function Apply() {
   return (
     <section className="apply_container width_container">
       <div className="apply_left">
-        <img src={applyImage} />
+        <img src={applyImage} alt="apply" />
       </div>
       <div className="apply_right">
         <h1 className="main_title">How to apply</h1>

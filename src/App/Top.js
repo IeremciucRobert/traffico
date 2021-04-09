@@ -40,19 +40,19 @@ export default function Top() {
       <header className="top">
         <div className="width_container">
           <nav className="top_nav">
-            <img className="top_logo" src={logo} />
+            <img className="top_logo" src={logo} alt="logo" />
             <ul className="top_buttons_container">
               <li>
-                <a>About</a>
+                <a href="www.test.com">About</a>
               </li>
               <li>
-                <a>How to</a>
+                <a href="www.test.com">How to</a>
               </li>
               <li>
-                <a>Faqs</a>
+                <a href="www.test.com">Faqs</a>
               </li>
               <li className="top_button_active">
-                <a>Contact us</a>
+                <a href="www.test.com">Contact us</a>
               </li>
             </ul>
             <button className="top_hamburger">
@@ -63,16 +63,16 @@ export default function Top() {
             </button>
             <ul className="top_buttons_mobile">
               <li>
-                <a>About</a>
+                <a href="www.test.com">About</a>
               </li>
               <li>
-                <a>How to</a>
+                <a href="www.test.com">How to</a>
               </li>
               <li>
-                <a>Faqs</a>
+                <a href="www.test.com">Faqs</a>
               </li>
               <li className="top_button_mobile_active">
-                <a>Contact us</a>
+                <a href="www.test.com">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -83,7 +83,7 @@ export default function Top() {
         </div>
       </header>
       <div className="mobel_container">
-        <img src={mobel} />
+        <img src={mobel} alt="mobel" />
       </div>
     </>
   );
