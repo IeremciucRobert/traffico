@@ -6,12 +6,35 @@ footer {
   position: absolute;
   z-index: 1;
   top: -6%;
+  padding-right: 4%;
 }
 
-.footer_treckmobil img {
+.f_treckmobil_wrapper {
+  position: relative;
   height: 210px;
+}
+
+#treckmobil {
+  position: relative;
+  z-index: 2;
+  height: 100%;
   width: auto;
   display: block;
+  transform: translateX(-100%);
+  transition: all 500ms linear;
+}
+
+.f_treckmobil_wrapper img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
+
+.footer_treckmobil > img:first-of-type {
+  position: absolute;
+  bottom: 7%;
+  right: 0;
+  z-index: 1;
 }
 
 .footer_background {
@@ -182,7 +205,7 @@ footer {
   margin-right: 0;
 }
 
-.footer_buttons_container li:last-child a {
+.footer_buttons_container li:last-child button {
   padding-right: 0;
 }
 

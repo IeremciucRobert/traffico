@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../CSS/footer.css";
+import { setMenuActions } from "../JS/toSectionButtons";
 import logo from "../Images/logo.svg";
 import facebook from "../Images/facebook.svg";
 import instagram from "../Images/instagram.svg";
 import twitter from "../Images/twitter.svg";
 import treckmobil from "../Images/treckmobil.svg";
+import treckmobilC1 from "../Images/treckmobil_semicircle1.svg";
+import treckmobilC2 from "../Images/treckmobil_semicircle2.svg";
 
 export default function Footer() {
+  useEffect(() => {
+    setMenuActions(".footer_buttons_container");
+  }, []);
+
   return (
     <footer>
       <div className="footer_treckmobil">
-        <img src={treckmobil} alt="treckmobil" />
+        <div className="f_treckmobil_wrapper">
+          <img id="treckmobil" src={treckmobil} alt="treckmobil" />
+          <img src={treckmobilC1} alt="treckmobil1" />
+        </div>
+        <img src={treckmobilC2} alt="treckmobil2" />
       </div>
       <div className="footer_background"></div>
       <div className="footer_container width_container">
@@ -32,13 +43,13 @@ export default function Footer() {
             <img className="top_logo" src={logo} alt="logo" />
             <ul className="footer_buttons_container top_buttons_container">
               <li>
-                <a href="www.test.com">About</a>
+                <button data-section="about">About</button>
               </li>
               <li>
-                <a href="www.test.com">How to</a>
+                <button data-section="howTo">How to</button>
               </li>
               <li>
-                <a href="www.test.com">Faqs</a>
+                <button data-section="faqs">Faqs</button>
               </li>
             </ul>
           </nav>

@@ -68,16 +68,26 @@ main {
   flex: 1;
 }
 
-.about_right img {
+@media only screen and (max-width: 1024px) {
+  .about_right {
+    height: 435px;
+    margin: auto;
+    flex: none;
+  }
+}
+
+#about_image {
+  position: relative;
   display: block;
   width: 100%;
   height: auto;
 }
 
 @media only screen and (max-width: 1024px) {
-  .about_right img {
+  #about_image {
     max-width: 477px;
-    margin: auto;
+    height: 100%;
+    width: auto;
   }
 }
 
@@ -107,6 +117,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    height: 435px;
+    flex: none;
   }
   .apply_left h1 {
     text-align: center;
@@ -121,6 +133,15 @@ main {
   width: 100%;
   height: auto;
   display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .apply_left img {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

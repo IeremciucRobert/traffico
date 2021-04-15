@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../CSS/top.css";
 import logo from "../Images/logo.svg";
 import mobel from "../Images/mobel.svg";
+import { setMenuActions } from "../JS/toSectionButtons";
 
 export default function Top() {
   useEffect(() => {
@@ -35,24 +36,30 @@ export default function Top() {
     };
   });
 
+  useEffect(() => {
+    setMenuActions(".top_buttons_container");
+  }, []);
+
   return (
     <>
       <header className="top">
         <div className="width_container">
           <nav className="top_nav">
-            <img className="top_logo" src={logo} alt="logo" />
+            <div className="top_logo_wrapper">
+              <img className="top_logo" src={logo} alt="logo" />
+            </div>
             <ul className="top_buttons_container">
               <li>
-                <a href="www.test.com">About</a>
+                <button data-section="about">About</button>
               </li>
               <li>
-                <a href="www.test.com">How to</a>
+                <button data-section="howTo">How to</button>
               </li>
               <li>
-                <a href="www.test.com">Faqs</a>
+                <button data-section="faqs">Faqs</button>
               </li>
               <li className="top_button_active">
-                <a href="www.test.com">Contact us</a>
+                <button data-section="contactUs">Contact us</button>
               </li>
             </ul>
             <button className="top_hamburger">
@@ -83,7 +90,9 @@ export default function Top() {
         </div>
       </header>
       <div className="mobel_container">
-        <img src={mobel} alt="mobel" />
+        <div className="mobel_wrapper">
+          <img id="mobel" src={mobel} alt="mobel" />
+        </div>
       </div>
     </>
   );

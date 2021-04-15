@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS/main.css";
 import aboutImage from "../Images/about.svg";
 import applyImage from "../Images/apply.svg";
@@ -103,7 +103,7 @@ function About() {
         </div>
       </div>
       <div className="about_right">
-        <img src={aboutImage} alt="about" />
+        <img id="about_image" src={aboutImage} alt="about" />
       </div>
     </section>
   );
@@ -113,7 +113,7 @@ function Apply() {
   return (
     <section className="apply_container width_container">
       <div className="apply_left">
-        <img src={applyImage} alt="apply" />
+        <img id="apply_image" src={applyImage} alt="apply" />
       </div>
       <div className="apply_right">
         <h1 className="main_title">How to apply</h1>
