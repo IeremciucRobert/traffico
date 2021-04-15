@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../CSS/main.css";
 import aboutImage from "../Images/about.svg";
 import applyImage from "../Images/apply.svg";
